@@ -25,6 +25,7 @@ jobs:
     - name: Upload executable
       uses: actions/upload-artifact@v4
       with:
-        name: Minesweeper.exe
+        name: Minesweeper.Win32.exe
         path: |
-          Minesweeper/Release/Minesweeper.exe
+          x64/Release/Minesweeper.Win32.exe
+
