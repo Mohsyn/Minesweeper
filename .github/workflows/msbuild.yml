@@ -20,7 +20,7 @@ jobs:
       run: nuget restore Minesweeper.sln
 
     - name: Build solution
-      run: msbuild Minesweeper.sln /p:Configuration=Release /p:Platform=x64
+      run: msbuild Minesweeper.sln /p:Configuration=Release /p:Platform=x64 /p:WindowsTargetPlatformVersion=10.0.19041.0
 
     - name: Upload executable
       uses: actions/upload-artifact@v4
