@@ -16,6 +16,9 @@ jobs:
     - name: Setup MSBuild
       uses: microsoft/setup-msbuild@v1.1
 
+    - name: Restore NuGet packages
+      run: nuget restore Minesweeper.sln
+
     - name: Build solution
       run: msbuild Minesweeper.sln /p:Configuration=Release /p:Platform=x64
 
